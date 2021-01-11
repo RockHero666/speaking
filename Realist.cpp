@@ -29,7 +29,7 @@ std::string  Realist::Talk(Human* human)
 std::string Realist::Say_of_me()
 {
 	std::ostringstream buff;
-	buff << age;
+	buff << age ;
 	std::string str = "Меня зовут ";
 	str += name;
 	str += ", мой возраст ";
