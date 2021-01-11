@@ -1,4 +1,4 @@
-#include "Neformal.h"
+п»ї#include "Neformal.h"
 #include"Forward declaration.h"
 #include <sstream>
 
@@ -15,7 +15,7 @@ std::string  Neformal::Talk(Human* human)
 {
 	std::string str;
 	str = this->getName();
-	str += ": Привет, ";
+	str += ": РџСЂРёРІРµС‚, ";
 	str += human->getName();
 	str += "!\n";
 	return str;
@@ -25,12 +25,12 @@ std::string Neformal::Say_of_me()
 {
 	std::ostringstream buff;
 	buff << age;
-	std::string str = "Меня зовут ";
+	std::string str = "РњРµРЅСЏ Р·РѕРІСѓС‚ ";
 	str += name;
-	str += ", мой возраст ";
+	str += ", РјРѕР№ РІРѕР·СЂР°СЃС‚ ";
 	str += buff.str();
 	str += Age_grammatic(this->age);
-	str += " и я неформал.\n";
+	str += " Рё СЏ РЅРµС„РѕСЂРјР°Р».\n";
 
 	return str;
 }

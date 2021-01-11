@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "Human.h"
 
 class Formalist : public Human

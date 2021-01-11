@@ -1,4 +1,4 @@
-#include "Formalist.h"
+п»ї#include "Formalist.h"
 #include"Forward declaration.h"
 #include <sstream>
 
@@ -17,7 +17,7 @@ std::string  Formalist::Talk (Human *human)
 
 	std::string str;
 	str = this->getName();
-	str += ": Здравствуйте, ";
+	str += ": Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ, ";
 	str += human->getName();
 	str += "!\n";
 	return str;
@@ -27,12 +27,12 @@ std::string Formalist::Say_of_me()
 {
 	std::ostringstream buff;
 	buff << age;
-	std::string str = "Меня зовут ";
+	std::string str = "РњРµРЅСЏ Р·РѕРІСѓС‚ ";
 	str += name;
-	str += ", мой возраст ";
+	str += ", РјРѕР№ РІРѕР·СЂР°СЃС‚ ";
 	str += buff.str();
 	str += Age_grammatic(this->age);
-	str += " и я формалист.\n";
+	str += " Рё СЏ С„РѕСЂРјР°Р»РёСЃС‚.\n";
 
 	return str;
 }

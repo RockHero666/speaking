@@ -1,28 +1,28 @@
-#include<random>
+п»ї#include<random>
 
-int Random(int beg,int end) // вихрь марслена 
+int Random(int beg,int end) // РІРёС…СЂСЊ РјР°СЂСЃР»РµРЅР° 
 {
-	std::random_device rd; // случайное число
-	std::mt19937 random(rd()); // с вихрем марслена
-	std::uniform_int_distribution<> distrib(beg, end); // в определенном диапазоне что бы можно было передать вихрь
+	std::random_device rd; // СЃР»СѓС‡Р°Р№РЅРѕРµ С‡РёСЃР»Рѕ
+	std::mt19937 random(rd()); // СЃ РІРёС…СЂРµРј РјР°СЂСЃР»РµРЅР°
+	std::uniform_int_distribution<> distrib(beg, end); // РІ РѕРїСЂРµРґРµР»РµРЅРЅРѕРј РґРёР°РїР°Р·РѕРЅРµ С‡С‚Рѕ Р±С‹ РјРѕР¶РЅРѕ Р±С‹Р»Рѕ РїРµСЂРµРґР°С‚СЊ РІРёС…СЂСЊ
 
-	return distrib(random);// возврат диапазона с параметром вихря
+	return distrib(random);// РІРѕР·РІСЂР°С‚ РґРёР°РїР°Р·РѕРЅР° СЃ РїР°СЂР°РјРµС‚СЂРѕРј РІРёС…СЂСЏ
 }
 
 std::string Random_name()
 {
 	std::string str[10]
 	{
-		"Александр",
-		"Андрей",
-		"Анастасия",
-		"Ирина",
-		"Наталья",
-		"Павел",
-		"Роман",
-		"Светлана",
-		"Сергей",
-		"Татьяна"
+		"РђР»РµРєСЃР°РЅРґСЂ",
+		"РђРЅРґСЂРµР№",
+		"РђРЅР°СЃС‚Р°СЃРёСЏ",
+		"РСЂРёРЅР°",
+		"РќР°С‚Р°Р»СЊСЏ",
+		"РџР°РІРµР»",
+		"Р РѕРјР°РЅ",
+		"РЎРІРµС‚Р»Р°РЅР°",
+		"РЎРµСЂРіРµР№",
+		"РўР°С‚СЊСЏРЅР°"
 	};
 
 	return str[Random(0, 9)];
@@ -42,14 +42,14 @@ std::string Age_grammatic(int x)
 	case 20:case 25: case 26: case 27: case 28: case 29:
 	case 30: case 35: case 36: case 37: case 38: case 39:
 	case 40:
-		str = " лет";
+		str = " Р»РµС‚";
 		break;
 	case 22: case 23: case 24:
 	case 32: case 33: case 34:
-		str = " года";
+		str = " РіРѕРґР°";
 		break;
 	case 21:case 31:
-		str = " год";
+		str = " РіРѕРґ";
 		break;
 	}
 	return str;
