@@ -1,4 +1,4 @@
-#include "Realist.h"
+п»ї#include "Realist.h"
 #include"Forward declaration.h"
 #include <sstream>
 
@@ -17,9 +17,9 @@ std::string  Realist::Talk(Human* human)
 	str = this->getName();
 
 	if(this->getAge()+5<=human->getAge())
-	str += ": Здравствуйте, ";
+	str += ": Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ, ";
 	else
-	str += ": Привет, ";
+	str += ": РџСЂРёРІРµС‚, ";
 
 	str += human->getName();
 	str += "!\n";
@@ -30,12 +30,12 @@ std::string Realist::Say_of_me()
 {
 	std::ostringstream buff;
 	buff << age;
-	std::string str = "Меня зовут ";
+	std::string str = "РњРµРЅСЏ Р·РѕРІСѓС‚ ";
 	str += name;
-	str += ", мой возраст ";
+	str += ", РјРѕР№ РІРѕР·СЂР°СЃС‚ ";
 	str += buff.str();
 	str += Age_grammatic(this->age);
-	str += " и я реалист.\n";
+	str += " Рё СЏ СЂРµР°Р»РёСЃС‚.\n";
 
 	return str;
 }
